@@ -53,7 +53,7 @@ const LiveChat = ({ id }) => {
       </div>
 
       <div className="flex items-center justify-center gap-x-2 mt-3 border-t border-gray-300">
-        <form onSubmit={(event) => handleLiveInput(event)}>
+        <form onSubmit={(event) => handleLiveInput(event.target.value)}>
           <input
             placeholder="Type your comment"
             className="w-10/12 bg-transparent p-2 outline-none border-b border-gray-400 focus:border-b-[2px] focus:border-blue-600"
